@@ -1,0 +1,30 @@
+.walletCard {
+    text-align: center;
+}
+
+.btnConnect {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: #04AA6D;
+    box-shadow: 0 4px #999;
+}
+
+.btnConnect:hover {
+    background-color: #3e8e41;
+}
+
+.btnConnect:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.welcomeText {
+    color: brown;
+}
+
+.labelText {
+    color: aquamarine;
+}
