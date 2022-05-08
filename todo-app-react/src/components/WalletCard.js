@@ -24,17 +24,16 @@ const WalletCard = () => {
     const onAddBtnClick = useCallback((e) => {
         const conn = new ConnectWeb3();
         conn.createTask(textInput).then(async r => {
-            const listResult = await conn.getAllTodoTask();
-            setTodoList(listResult);
+            connectWalletHandler();
             setTextInput("");
+
         });
     }, [textInput]);
 
     const onCheckBtnClick = useCallback((id) => {
         const conn = new ConnectWeb3();
         conn.checkCompleteTask(id).then(async r => {
-            const listResult = await conn.getAllTodoTask();
-            setTodoList(listResult);
+            connectWalletHandler();
         });
     }, []);
 
@@ -97,7 +96,7 @@ const WalletCard = () => {
                 <h3 className="labelText">Address: </h3><h2>{defaultAccount}</h2>
             </div>
             <div className='balanceDisplay'>
-                <h3>Balance: {userBalance}</h3>
+                <h3>Balance: {userBalance} ETH</h3>
             </div>
             {errorMessage}
             <h3>Todo List</h3>
