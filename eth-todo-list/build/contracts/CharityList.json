@@ -1,0 +1,2751 @@
+{
+  "contractName": "CharityList",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "charities",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "message",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "donor",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "charityCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_message",
+          "type": "string"
+        }
+      ],
+      "name": "createCharity",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"charities\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"message\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"donor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"charityCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_message\",\"type\":\"string\"}],\"name\":\"createCharity\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/CharityList.sol\":\"CharityList\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/CharityList.sol\":{\"keccak256\":\"0x615b8e40f9ede8ae0f6e87ea732cd116ffd149a2891deb7456e04e7ba04e0265\",\"urls\":[\"bzz-raw://26766e9e2c5483cccaa3f2b6f2cb39b990fe94c0f524fc27c38ab4e5ec683d01\",\"dweb:/ipfs/QmbiGcgTJaaAXUxW3fioPdKJYz2dHQqKp3L7Hmhr6sLHm8\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b50600180546001600160a01b0319163317905561041f806100366000396000f3fe6080604052600436106100345760003560e01c806364be55481461003957806391329493146100e1578063fb709d2e14610108575b600080fd5b6100df6004803603602081101561004f57600080fd5b81019060208101813564010000000081111561006a57600080fd5b82018360208201111561007c57600080fd5b8035906020019184600183028401116401000000008311171561009e57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101d1945050505050565b005b3480156100ed57600080fd5b506100f661028d565b60408051918252519081900360200190f35b34801561011457600080fd5b506101326004803603602081101561012b57600080fd5b5035610293565b6040518085815260200180602001846001600160a01b03166001600160a01b03168152602001838152602001828103825285818151815260200191508051906020019080838360005b8381101561019357818101518382015260200161017b565b50505050905090810190601f1680156101c05780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b60008054600190810180835560408051608081018252828152602080820187815233838501523460608401529386526002815291909420845181559151805192936102249390850192919091019061034e565b506040828101516002830180546001600160a01b039283166001600160a01b031990911617905560609093015160039092019190915560015490519116903480156108fc02916000818181858888f19350505050158015610289573d6000803e3d6000fd5b5050565b60005481565b60026020818152600092835260409283902080546001808301805487519281161561010002600019011695909504601f810185900485028201850190965285815290949193909290919083018282801561032e5780601f106103035761010080835404028352916020019161032e565b820191906000526020600020905b81548152906001019060200180831161031157829003601f168201915b50505050600283015460039093015491926001600160a01b031691905084565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061038f57805160ff19168380011785556103bc565b828001600101855582156103bc579182015b828111156103bc5782518255916020019190600101906103a1565b506103c89291506103cc565b5090565b6103e691905b808211156103c857600081556001016103d2565b9056fea2646970667358221220887b4523035f384ef1487f85974d31dc053e7b32bfea207add0643ac4ff753bf64736f6c63430006000033",
+  "deployedBytecode": "0x6080604052600436106100345760003560e01c806364be55481461003957806391329493146100e1578063fb709d2e14610108575b600080fd5b6100df6004803603602081101561004f57600080fd5b81019060208101813564010000000081111561006a57600080fd5b82018360208201111561007c57600080fd5b8035906020019184600183028401116401000000008311171561009e57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101d1945050505050565b005b3480156100ed57600080fd5b506100f661028d565b60408051918252519081900360200190f35b34801561011457600080fd5b506101326004803603602081101561012b57600080fd5b5035610293565b6040518085815260200180602001846001600160a01b03166001600160a01b03168152602001838152602001828103825285818151815260200191508051906020019080838360005b8381101561019357818101518382015260200161017b565b50505050905090810190601f1680156101c05780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b60008054600190810180835560408051608081018252828152602080820187815233838501523460608401529386526002815291909420845181559151805192936102249390850192919091019061034e565b506040828101516002830180546001600160a01b039283166001600160a01b031990911617905560609093015160039092019190915560015490519116903480156108fc02916000818181858888f19350505050158015610289573d6000803e3d6000fd5b5050565b60005481565b60026020818152600092835260409283902080546001808301805487519281161561010002600019011695909504601f810185900485028201850190965285815290949193909290919083018282801561032e5780601f106103035761010080835404028352916020019161032e565b820191906000526020600020905b81548152906001019060200180831161031157829003601f168201915b50505050600283015460039093015491926001600160a01b031691905084565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061038f57805160ff19168380011785556103bc565b828001600101855582156103bc579182015b828111156103bc5782518255916020019190600101906103a1565b506103c89291506103cc565b5090565b6103e691905b808211156103c857600081556001016103d2565b9056fea2646970667358221220887b4523035f384ef1487f85974d31dc053e7b32bfea207add0643ac4ff753bf64736f6c63430006000033",
+  "sourceMap": "35:1552:1:-:0;;;93:1;63:31;;430:59;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;462:6:1;:19;;-1:-1:-1;;;;;;462:19:1;471:10;462:19;;;35:1552;;;;;;",
+  "deployedSourceMap": "35:1552:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;497:353;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;497:353:1;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;497:353:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;497:353:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;497:353:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;497:353:1;;-1:-1:-1;497:353:1;;-1:-1:-1;;;;;497:353:1:i;:::-;;63:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;63:31:1;;;:::i;:::-;;;;;;;;;;;;;;;;245:44;;8:9:-1;5:2;;;30:1;27;20:12;5:2;245:44:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;245:44:1;;:::i;:::-;;;;;;;;;;;;;-1:-1:-1;;;;;245:44:1;-1:-1:-1;;;;;245:44:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;245:44:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;497:353;570:12;:14;;;;;;;;;621:117;;;;;;;;;;;;;;;;;;693:10;621:117;;;;718:9;621:117;;;;595:23;;;:9;:23;;;;;;:143;;;;;;;;:23;;:143;;;;;;;;;;;;:::i;:::-;-1:-1:-1;595:143:1;;;;;;;;;;-1:-1:-1;;;;;595:143:1;;;-1:-1:-1;;;;;;595:143:1;;;;;;;;;;;;;;;;;;;;757:6;749:35;;757:6;;;774:9;749:35;;;;;595:143;749:35;595:143;749:35;774:9;757:6;749:35;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;749:35:1;497:353;:::o;63:31::-;;;;:::o;245:44::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;245:44:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;245:44:1;;;;;;;;;;;-1:-1:-1;;;;;245:44:1;;;-1:-1:-1;245:44:1;:::o;35:1552::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;35:1552:1;;;-1:-1:-1;35:1552:1;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.6.0 <0.9.0;\r\n\r\ncontract CharityList {\r\n    uint256 public charityCount = 0;\r\n    address _owner;\r\n    struct Charity {\r\n        uint256 id;\r\n        string message;\r\n        address donor;\r\n        uint256 value;\r\n    }\r\n    mapping(uint256 => Charity) public charities;\r\n\r\n    // event TaskCreated(uint256 id, string content, bool completed);\r\n\r\n    // event TaskCompleted(uint256 id, bool completed);\r\n\r\n    constructor() public {\r\n        _owner = msg.sender;\r\n    }\r\n\r\n    function createCharity(string memory _message) public payable {\r\n        charityCount++;\r\n        charities[charityCount] = Charity(\r\n            charityCount,\r\n            _message,\r\n            msg.sender,\r\n            msg.value\r\n        );\r\n        payable(_owner).transfer(msg.value);\r\n        // emit TaskCreated(taskCount, _message, false);\r\n    }\r\n\r\n    modifier validateTransferAmount() {\r\n        require(msg.value > 0, \"Transfer amount has to be greater than 0.\");\r\n        _;\r\n    }\r\n    modifier validateCharity(uint256 charityIndex) {\r\n        require(\r\n            // charityIndex <= charityAddresses.length - 1,\r\n            false,\r\n            \"Invalid charity index.\"\r\n        );\r\n        _;\r\n    }\r\n    modifier validateTransferdAmount() {\r\n        require(msg.value > 0, \"Transfer amount has to be greater than 0.\");\r\n        _;\r\n    }\r\n\r\n    // function toggleCompleted(uint256 _id) public {\r\n    //     Task memory _task = tasks[_id];\r\n    //     _task.completed = true;\r\n    //     tasks[_id] = _task;\r\n    //     emit TaskCompleted(_id, _task.completed);\r\n    // }\r\n}\r\n",
+  "sourcePath": "E:\\VKU-3-Term2\\CD\\blockchain_endterm\\eth-todo-list\\contracts\\CharityList.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/CharityList.sol",
+    "exportedSymbols": {
+      "CharityList": [
+        381
+      ]
+    },
+    "id": 382,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 287,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 381,
+        "linearizedBaseContracts": [
+          381
+        ],
+        "name": "CharityList",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "91329493",
+            "id": 290,
+            "name": "charityCount",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 381,
+            "src": "63:31:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 288,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "63:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 289,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "93:1:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 292,
+            "name": "_owner",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 381,
+            "src": "101:14:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 291,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "101:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "canonicalName": "CharityList.Charity",
+            "id": 301,
+            "members": [
+              {
+                "constant": false,
+                "id": 294,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 301,
+                "src": "148:10:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 293,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "148:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 296,
+                "name": "message",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 301,
+                "src": "169:14:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 295,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "169:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 298,
+                "name": "donor",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 301,
+                "src": "194:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 297,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "194:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 300,
+                "name": "value",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 301,
+                "src": "218:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 299,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "218:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Charity",
+            "nodeType": "StructDefinition",
+            "scope": 381,
+            "src": "122:117:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "fb709d2e",
+            "id": 305,
+            "name": "charities",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 381,
+            "src": "245:44:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Charity_$301_storage_$",
+              "typeString": "mapping(uint256 => struct CharityList.Charity)"
+            },
+            "typeName": {
+              "id": 304,
+              "keyType": {
+                "id": 302,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "253:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "245:27:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Charity_$301_storage_$",
+                "typeString": "mapping(uint256 => struct CharityList.Charity)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 303,
+                "name": "Charity",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 301,
+                "src": "264:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Charity_$301_storage_ptr",
+                  "typeString": "struct CharityList.Charity"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 313,
+              "nodeType": "Block",
+              "src": "451:38:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 311,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 308,
+                      "name": "_owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 292,
+                      "src": "462:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 309,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 519,
+                        "src": "471:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 310,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "471:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "462:19:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 312,
+                  "nodeType": "ExpressionStatement",
+                  "src": "462:19:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 314,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 306,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:2:1"
+            },
+            "returnParameters": {
+              "id": 307,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "451:0:1"
+            },
+            "scope": 381,
+            "src": "430:59:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 344,
+              "nodeType": "Block",
+              "src": "559:291:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 320,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "570:14:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 319,
+                      "name": "charityCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 290,
+                      "src": "570:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 321,
+                  "nodeType": "ExpressionStatement",
+                  "src": "570:14:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 333,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 322,
+                        "name": "charities",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 305,
+                        "src": "595:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Charity_$301_storage_$",
+                          "typeString": "mapping(uint256 => struct CharityList.Charity storage ref)"
+                        }
+                      },
+                      "id": 324,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 323,
+                        "name": "charityCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 290,
+                        "src": "605:12:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "595:23:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Charity_$301_storage",
+                        "typeString": "struct CharityList.Charity storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 326,
+                          "name": "charityCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 290,
+                          "src": "643:12:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 327,
+                          "name": "_message",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 316,
+                          "src": "670:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 328,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 519,
+                            "src": "693:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 329,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "693:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 330,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 519,
+                            "src": "718:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 331,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "718:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 325,
+                        "name": "Charity",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 301,
+                        "src": "621:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Charity_$301_storage_ptr_$",
+                          "typeString": "type(struct CharityList.Charity storage pointer)"
+                        }
+                      },
+                      "id": 332,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "621:117:1",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Charity_$301_memory",
+                        "typeString": "struct CharityList.Charity memory"
+                      }
+                    },
+                    "src": "595:143:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Charity_$301_storage",
+                      "typeString": "struct CharityList.Charity storage ref"
+                    }
+                  },
+                  "id": 334,
+                  "nodeType": "ExpressionStatement",
+                  "src": "595:143:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 340,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 519,
+                          "src": "774:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 341,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "774:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 337,
+                            "name": "_owner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 292,
+                            "src": "757:6:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 336,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "749:8:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_payable_$",
+                            "typeString": "type(address payable)"
+                          },
+                          "typeName": {
+                            "id": 335,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "749:8:1",
+                            "stateMutability": "payable",
+                            "typeDescriptions": {
+                              "typeIdentifier": null,
+                              "typeString": null
+                            }
+                          }
+                        },
+                        "id": 338,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "749:15:1",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 339,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "749:24:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 342,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "749:35:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 343,
+                  "nodeType": "ExpressionStatement",
+                  "src": "749:35:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "64be5548",
+            "id": 345,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createCharity",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 317,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 316,
+                  "name": "_message",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 345,
+                  "src": "520:22:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 315,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "520:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "519:24:1"
+            },
+            "returnParameters": {
+              "id": 318,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "559:0:1"
+            },
+            "scope": 381,
+            "src": "497:353:1",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 356,
+              "nodeType": "Block",
+              "src": "892:98:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 351,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 348,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 519,
+                            "src": "911:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 349,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "911:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 350,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "923:1:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "911:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "5472616e7366657220616d6f756e742068617320746f2062652067726561746572207468616e20302e",
+                        "id": 352,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "926:43:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_6da2074e21274db79045086352c9a57e267334680f72405f5c24115ee6276dd6",
+                          "typeString": "literal_string \"Transfer amount has to be greater than 0.\""
+                        },
+                        "value": "Transfer amount has to be greater than 0."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_6da2074e21274db79045086352c9a57e267334680f72405f5c24115ee6276dd6",
+                          "typeString": "literal_string \"Transfer amount has to be greater than 0.\""
+                        }
+                      ],
+                      "id": 347,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        522,
+                        523
+                      ],
+                      "referencedDeclaration": 523,
+                      "src": "903:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 353,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "903:67:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 354,
+                  "nodeType": "ExpressionStatement",
+                  "src": "903:67:1"
+                },
+                {
+                  "id": 355,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "981:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 357,
+            "name": "validateTransferAmount",
+            "nodeType": "ModifierDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 346,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "889:2:1"
+            },
+            "src": "858:132:1",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 367,
+              "nodeType": "Block",
+              "src": "1043:169:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "66616c7365",
+                        "id": 362,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1137:5:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "496e76616c6964206368617269747920696e6465782e",
+                        "id": 363,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1157:24:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_22ef1c59e9e097dd46b30e5af860fd1d3e6e5aca1099b52b6dda4be56d0eb44b",
+                          "typeString": "literal_string \"Invalid charity index.\""
+                        },
+                        "value": "Invalid charity index."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_22ef1c59e9e097dd46b30e5af860fd1d3e6e5aca1099b52b6dda4be56d0eb44b",
+                          "typeString": "literal_string \"Invalid charity index.\""
+                        }
+                      ],
+                      "id": 361,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        522,
+                        523
+                      ],
+                      "referencedDeclaration": 523,
+                      "src": "1054:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 364,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1054:138:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 365,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1054:138:1"
+                },
+                {
+                  "id": 366,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1203:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 368,
+            "name": "validateCharity",
+            "nodeType": "ModifierDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 360,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 359,
+                  "name": "charityIndex",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 368,
+                  "src": "1021:20:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 358,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1021:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1020:22:1"
+            },
+            "src": "996:216:1",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 379,
+              "nodeType": "Block",
+              "src": "1253:98:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 374,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 371,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 519,
+                            "src": "1272:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 372,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "1272:9:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 373,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1284:1:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "1272:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "5472616e7366657220616d6f756e742068617320746f2062652067726561746572207468616e20302e",
+                        "id": 375,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1287:43:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_6da2074e21274db79045086352c9a57e267334680f72405f5c24115ee6276dd6",
+                          "typeString": "literal_string \"Transfer amount has to be greater than 0.\""
+                        },
+                        "value": "Transfer amount has to be greater than 0."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_6da2074e21274db79045086352c9a57e267334680f72405f5c24115ee6276dd6",
+                          "typeString": "literal_string \"Transfer amount has to be greater than 0.\""
+                        }
+                      ],
+                      "id": 370,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        522,
+                        523
+                      ],
+                      "referencedDeclaration": 523,
+                      "src": "1264:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 376,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1264:67:1",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 377,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1264:67:1"
+                },
+                {
+                  "id": 378,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "1342:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 380,
+            "name": "validateTransferdAmount",
+            "nodeType": "ModifierDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 369,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1250:2:1"
+            },
+            "src": "1218:133:1",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 382,
+        "src": "35:1552:1"
+      }
+    ],
+    "src": "0:1589:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/CharityList.sol",
+      "exportedSymbols": {
+        "CharityList": [
+          381
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.6",
+            ".0",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 287,
+        "name": "PragmaDirective",
+        "src": "0:31:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            381
+          ],
+          "name": "CharityList",
+          "scope": 382
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "91329493",
+              "name": "charityCount",
+              "overrides": null,
+              "scope": 381,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 288,
+                "name": "ElementaryTypeName",
+                "src": "63:7:1"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 289,
+                "name": "Literal",
+                "src": "93:1:1"
+              }
+            ],
+            "id": 290,
+            "name": "VariableDeclaration",
+            "src": "63:31:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "_owner",
+              "overrides": null,
+              "scope": 381,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 291,
+                "name": "ElementaryTypeName",
+                "src": "101:7:1"
+              }
+            ],
+            "id": 292,
+            "name": "VariableDeclaration",
+            "src": "101:14:1"
+          },
+          {
+            "attributes": {
+              "canonicalName": "CharityList.Charity",
+              "name": "Charity",
+              "scope": 381,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "id",
+                  "overrides": null,
+                  "scope": 301,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 293,
+                    "name": "ElementaryTypeName",
+                    "src": "148:7:1"
+                  }
+                ],
+                "id": 294,
+                "name": "VariableDeclaration",
+                "src": "148:10:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "message",
+                  "overrides": null,
+                  "scope": 301,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 295,
+                    "name": "ElementaryTypeName",
+                    "src": "169:6:1"
+                  }
+                ],
+                "id": 296,
+                "name": "VariableDeclaration",
+                "src": "169:14:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "donor",
+                  "overrides": null,
+                  "scope": 301,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 297,
+                    "name": "ElementaryTypeName",
+                    "src": "194:7:1"
+                  }
+                ],
+                "id": 298,
+                "name": "VariableDeclaration",
+                "src": "194:13:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "value",
+                  "overrides": null,
+                  "scope": 301,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 299,
+                    "name": "ElementaryTypeName",
+                    "src": "218:7:1"
+                  }
+                ],
+                "id": 300,
+                "name": "VariableDeclaration",
+                "src": "218:13:1"
+              }
+            ],
+            "id": 301,
+            "name": "StructDefinition",
+            "src": "122:117:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "fb709d2e",
+              "name": "charities",
+              "overrides": null,
+              "scope": 381,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct CharityList.Charity)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct CharityList.Charity)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 302,
+                    "name": "ElementaryTypeName",
+                    "src": "253:7:1"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Charity",
+                      "referencedDeclaration": 301,
+                      "type": "struct CharityList.Charity"
+                    },
+                    "id": 303,
+                    "name": "UserDefinedTypeName",
+                    "src": "264:7:1"
+                  }
+                ],
+                "id": 304,
+                "name": "Mapping",
+                "src": "245:27:1"
+              }
+            ],
+            "id": 305,
+            "name": "VariableDeclaration",
+            "src": "245:44:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 381,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 306,
+                "name": "ParameterList",
+                "src": "441:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 307,
+                "name": "ParameterList",
+                "src": "451:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 292,
+                              "type": "address",
+                              "value": "_owner"
+                            },
+                            "id": 308,
+                            "name": "Identifier",
+                            "src": "462:6:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 519,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 309,
+                                "name": "Identifier",
+                                "src": "471:3:1"
+                              }
+                            ],
+                            "id": 310,
+                            "name": "MemberAccess",
+                            "src": "471:10:1"
+                          }
+                        ],
+                        "id": 311,
+                        "name": "Assignment",
+                        "src": "462:19:1"
+                      }
+                    ],
+                    "id": 312,
+                    "name": "ExpressionStatement",
+                    "src": "462:19:1"
+                  }
+                ],
+                "id": 313,
+                "name": "Block",
+                "src": "451:38:1"
+              }
+            ],
+            "id": 314,
+            "name": "FunctionDefinition",
+            "src": "430:59:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "64be5548",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "createCharity",
+              "overrides": null,
+              "scope": 381,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_message",
+                      "overrides": null,
+                      "scope": 345,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 315,
+                        "name": "ElementaryTypeName",
+                        "src": "520:6:1"
+                      }
+                    ],
+                    "id": 316,
+                    "name": "VariableDeclaration",
+                    "src": "520:22:1"
+                  }
+                ],
+                "id": 317,
+                "name": "ParameterList",
+                "src": "519:24:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 318,
+                "name": "ParameterList",
+                "src": "559:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 290,
+                              "type": "uint256",
+                              "value": "charityCount"
+                            },
+                            "id": 319,
+                            "name": "Identifier",
+                            "src": "570:12:1"
+                          }
+                        ],
+                        "id": 320,
+                        "name": "UnaryOperation",
+                        "src": "570:14:1"
+                      }
+                    ],
+                    "id": 321,
+                    "name": "ExpressionStatement",
+                    "src": "570:14:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct CharityList.Charity storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct CharityList.Charity storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 305,
+                                  "type": "mapping(uint256 => struct CharityList.Charity storage ref)",
+                                  "value": "charities"
+                                },
+                                "id": 322,
+                                "name": "Identifier",
+                                "src": "595:9:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 290,
+                                  "type": "uint256",
+                                  "value": "charityCount"
+                                },
+                                "id": 323,
+                                "name": "Identifier",
+                                "src": "605:12:1"
+                              }
+                            ],
+                            "id": 324,
+                            "name": "IndexAccess",
+                            "src": "595:23:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "struct CharityList.Charity memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address_payable",
+                                      "typeString": "address payable"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 301,
+                                  "type": "type(struct CharityList.Charity storage pointer)",
+                                  "value": "Charity"
+                                },
+                                "id": 325,
+                                "name": "Identifier",
+                                "src": "621:7:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 290,
+                                  "type": "uint256",
+                                  "value": "charityCount"
+                                },
+                                "id": 326,
+                                "name": "Identifier",
+                                "src": "643:12:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 316,
+                                  "type": "string memory",
+                                  "value": "_message"
+                                },
+                                "id": 327,
+                                "name": "Identifier",
+                                "src": "670:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address payable"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 519,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 328,
+                                    "name": "Identifier",
+                                    "src": "693:3:1"
+                                  }
+                                ],
+                                "id": 329,
+                                "name": "MemberAccess",
+                                "src": "693:10:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "value",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 519,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 330,
+                                    "name": "Identifier",
+                                    "src": "718:3:1"
+                                  }
+                                ],
+                                "id": 331,
+                                "name": "MemberAccess",
+                                "src": "718:9:1"
+                              }
+                            ],
+                            "id": 332,
+                            "name": "FunctionCall",
+                            "src": "621:117:1"
+                          }
+                        ],
+                        "id": 333,
+                        "name": "Assignment",
+                        "src": "595:143:1"
+                      }
+                    ],
+                    "id": 334,
+                    "name": "ExpressionStatement",
+                    "src": "595:143:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "transfer",
+                              "referencedDeclaration": null,
+                              "type": "function (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "address payable",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address payable)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "address",
+                                          "stateMutability": "payable",
+                                          "type": null
+                                        },
+                                        "id": 335,
+                                        "name": "ElementaryTypeName",
+                                        "src": "749:8:1"
+                                      }
+                                    ],
+                                    "id": 336,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "749:8:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 292,
+                                      "type": "address",
+                                      "value": "_owner"
+                                    },
+                                    "id": 337,
+                                    "name": "Identifier",
+                                    "src": "757:6:1"
+                                  }
+                                ],
+                                "id": 338,
+                                "name": "FunctionCall",
+                                "src": "749:15:1"
+                              }
+                            ],
+                            "id": 339,
+                            "name": "MemberAccess",
+                            "src": "749:24:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "value",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 519,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 340,
+                                "name": "Identifier",
+                                "src": "774:3:1"
+                              }
+                            ],
+                            "id": 341,
+                            "name": "MemberAccess",
+                            "src": "774:9:1"
+                          }
+                        ],
+                        "id": 342,
+                        "name": "FunctionCall",
+                        "src": "749:35:1"
+                      }
+                    ],
+                    "id": 343,
+                    "name": "ExpressionStatement",
+                    "src": "749:35:1"
+                  }
+                ],
+                "id": 344,
+                "name": "Block",
+                "src": "559:291:1"
+              }
+            ],
+            "id": 345,
+            "name": "FunctionDefinition",
+            "src": "497:353:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "name": "validateTransferAmount",
+              "overrides": null,
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 346,
+                "name": "ParameterList",
+                "src": "889:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_6da2074e21274db79045086352c9a57e267334680f72405f5c24115ee6276dd6",
+                                  "typeString": "literal_string \"Transfer amount has to be greater than 0.\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                522,
+                                523
+                              ],
+                              "referencedDeclaration": 523,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 347,
+                            "name": "Identifier",
+                            "src": "903:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": ">",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "value",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 519,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 348,
+                                    "name": "Identifier",
+                                    "src": "911:3:1"
+                                  }
+                                ],
+                                "id": 349,
+                                "name": "MemberAccess",
+                                "src": "911:9:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 350,
+                                "name": "Literal",
+                                "src": "923:1:1"
+                              }
+                            ],
+                            "id": 351,
+                            "name": "BinaryOperation",
+                            "src": "911:13:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "5472616e7366657220616d6f756e742068617320746f2062652067726561746572207468616e20302e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Transfer amount has to be greater than 0.\"",
+                              "value": "Transfer amount has to be greater than 0."
+                            },
+                            "id": 352,
+                            "name": "Literal",
+                            "src": "926:43:1"
+                          }
+                        ],
+                        "id": 353,
+                        "name": "FunctionCall",
+                        "src": "903:67:1"
+                      }
+                    ],
+                    "id": 354,
+                    "name": "ExpressionStatement",
+                    "src": "903:67:1"
+                  },
+                  {
+                    "id": 355,
+                    "name": "PlaceholderStatement",
+                    "src": "981:1:1"
+                  }
+                ],
+                "id": 356,
+                "name": "Block",
+                "src": "892:98:1"
+              }
+            ],
+            "id": 357,
+            "name": "ModifierDefinition",
+            "src": "858:132:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "name": "validateCharity",
+              "overrides": null,
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "charityIndex",
+                      "overrides": null,
+                      "scope": 368,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 358,
+                        "name": "ElementaryTypeName",
+                        "src": "1021:7:1"
+                      }
+                    ],
+                    "id": 359,
+                    "name": "VariableDeclaration",
+                    "src": "1021:20:1"
+                  }
+                ],
+                "id": 360,
+                "name": "ParameterList",
+                "src": "1020:22:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_22ef1c59e9e097dd46b30e5af860fd1d3e6e5aca1099b52b6dda4be56d0eb44b",
+                                  "typeString": "literal_string \"Invalid charity index.\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                522,
+                                523
+                              ],
+                              "referencedDeclaration": 523,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 361,
+                            "name": "Identifier",
+                            "src": "1054:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "66616c7365",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "false"
+                            },
+                            "id": 362,
+                            "name": "Literal",
+                            "src": "1137:5:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "496e76616c6964206368617269747920696e6465782e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Invalid charity index.\"",
+                              "value": "Invalid charity index."
+                            },
+                            "id": 363,
+                            "name": "Literal",
+                            "src": "1157:24:1"
+                          }
+                        ],
+                        "id": 364,
+                        "name": "FunctionCall",
+                        "src": "1054:138:1"
+                      }
+                    ],
+                    "id": 365,
+                    "name": "ExpressionStatement",
+                    "src": "1054:138:1"
+                  },
+                  {
+                    "id": 366,
+                    "name": "PlaceholderStatement",
+                    "src": "1203:1:1"
+                  }
+                ],
+                "id": 367,
+                "name": "Block",
+                "src": "1043:169:1"
+              }
+            ],
+            "id": 368,
+            "name": "ModifierDefinition",
+            "src": "996:216:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "name": "validateTransferdAmount",
+              "overrides": null,
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 369,
+                "name": "ParameterList",
+                "src": "1250:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_6da2074e21274db79045086352c9a57e267334680f72405f5c24115ee6276dd6",
+                                  "typeString": "literal_string \"Transfer amount has to be greater than 0.\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                522,
+                                523
+                              ],
+                              "referencedDeclaration": 523,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 370,
+                            "name": "Identifier",
+                            "src": "1264:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": ">",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "value",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 519,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 371,
+                                    "name": "Identifier",
+                                    "src": "1272:3:1"
+                                  }
+                                ],
+                                "id": 372,
+                                "name": "MemberAccess",
+                                "src": "1272:9:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 373,
+                                "name": "Literal",
+                                "src": "1284:1:1"
+                              }
+                            ],
+                            "id": 374,
+                            "name": "BinaryOperation",
+                            "src": "1272:13:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "5472616e7366657220616d6f756e742068617320746f2062652067726561746572207468616e20302e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Transfer amount has to be greater than 0.\"",
+                              "value": "Transfer amount has to be greater than 0."
+                            },
+                            "id": 375,
+                            "name": "Literal",
+                            "src": "1287:43:1"
+                          }
+                        ],
+                        "id": 376,
+                        "name": "FunctionCall",
+                        "src": "1264:67:1"
+                      }
+                    ],
+                    "id": 377,
+                    "name": "ExpressionStatement",
+                    "src": "1264:67:1"
+                  },
+                  {
+                    "id": 378,
+                    "name": "PlaceholderStatement",
+                    "src": "1342:1:1"
+                  }
+                ],
+                "id": 379,
+                "name": "Block",
+                "src": "1253:98:1"
+              }
+            ],
+            "id": 380,
+            "name": "ModifierDefinition",
+            "src": "1218:133:1"
+          }
+        ],
+        "id": 381,
+        "name": "ContractDefinition",
+        "src": "35:1552:1"
+      }
+    ],
+    "id": 382,
+    "name": "SourceUnit",
+    "src": "0:1589:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.0+commit.26b70077.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xF530A0Ff4176977a1E26DA2316F44b91fB856C8c",
+      "transactionHash": "0x77d6975e7c38e4d3760e867884302c991100d7eca070de6f89a7d605751812cd"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-10T03:43:50.453Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
