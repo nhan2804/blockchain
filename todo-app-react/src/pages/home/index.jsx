@@ -35,7 +35,11 @@ const HomePage = () => {
     const a = Object.keys(rs).forEach((k) => {
       const el = rs[k];
       console.log({ el });
-      const nel = { ...el, value: ethers.utils.formatEther(el?.value) };
+      const nel = {
+        ...el,
+        value: parseInt(ethers.utils.formatEther(el?.value)),
+        address: "..." + el?.address?.slice(-7),
+      };
       sx.push(nel);
     });
     return sx;
@@ -61,6 +65,8 @@ const HomePage = () => {
       title: "Số lượng ETH",
       dataIndex: "value",
       key: "value",
+      defaultSortOrder: "descend",
+      sorter: (a, b) => a.value - b.value,
       render: (txt) => {
         return ethers.utils.formatEther(txt) + " Eth";
       },
@@ -77,22 +83,22 @@ const HomePage = () => {
       <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
         <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
           <Menu.Item key="1" icon={<PieChartOutlined />}>
-            Option 1
+            Dashboard
           </Menu.Item>
           <Menu.Item key="2" icon={<DesktopOutlined />}>
-            Option 2
+            Quyên góp
           </Menu.Item>
-          <SubMenu key="sub1" icon={<UserOutlined />} title="User">
+          <SubMenu key="sub1" icon={<UserOutlined />} title="Biểu đồ">
             <Menu.Item key="3">Tom</Menu.Item>
             <Menu.Item key="4">Bill</Menu.Item>
             <Menu.Item key="5">Alex</Menu.Item>
           </SubMenu>
-          <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
+          <SubMenu key="sub2" icon={<TeamOutlined />} title="Code">
             <Menu.Item key="6">Team 1</Menu.Item>
             <Menu.Item key="8">Team 2</Menu.Item>
           </SubMenu>
           <Menu.Item key="9" icon={<FileOutlined />}>
-            Files
+            Xem thống kê tất cả
           </Menu.Item>
         </Menu>
       </Sider>
@@ -112,8 +118,8 @@ const HomePage = () => {
         </Header>
         <Content style={{ margin: "0 16px" }}>
           <Breadcrumb style={{ margin: "16px 0" }}>
-            <Breadcrumb.Item>User</Breadcrumb.Item>
-            <Breadcrumb.Item>Bill</Breadcrumb.Item>
+            <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+            <Breadcrumb.Item>Quyên góp</Breadcrumb.Item>
           </Breadcrumb>
           <div
             className="site-layout-background"
@@ -148,18 +154,24 @@ const HomePage = () => {
               <TabPane tab="Quyên góp" key="2">
                 <CreateCharity />
               </TabPane>
-              <TabPane tab="Overview" key="3">
+              <TabPane tab="Thống kê" key="3">
                 <Table dataSource={charities} columns={columns} />;
               </TabPane>
-              <TabPane tab="Chart" key="4">
+              <TabPane tab="Biểu đồ" key="4">
                 <DemoDualAxes data={dataChart} />
+              </TabPane>
+              <TabPane tab="Tracking số tiền" key="5">
+                <p>
+                  Last action :{" "}
+                  <a href="https://etherscan.io/tx/0xd6124350c90e6f54099b50dfb46efb45a22f10c06e7e0b2e5266e883ee920c8c">
+                    https://etherscan.io/tx/0xd6124350c90e6f54099b50dfb46efb45a22f10c06e7e0b2e5266e883ee920c8c
+                  </a>
+                </p>
               </TabPane>
             </Tabs>
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
-        </Footer>
+        <Footer style={{ textAlign: "center" }}>©2022 Created by NNN</Footer>
       </Layout>
     </Layout>
   );

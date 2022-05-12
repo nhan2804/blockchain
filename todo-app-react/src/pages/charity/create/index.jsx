@@ -38,7 +38,7 @@ const CreateCharity = () => {
         autoComplete="off"
       >
         <Form.Item
-          label={"Wei"}
+          label={"Số lượng ETH"}
           name="eth"
           rules={[
             {
@@ -71,7 +71,7 @@ const CreateCharity = () => {
           }}
         >
           <Button type="primary" htmlType="submit">
-            Submit
+            Quyên góp
           </Button>
         </Form.Item>
       </Form>

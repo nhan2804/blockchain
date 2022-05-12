@@ -1,4 +1,4 @@
-export const TO_DO_LIST_ADDRESS = "0xF530A0Ff4176977a1E26DA2316F44b91fB856C8c";
+export const TO_DO_LIST_ADDRESS = "0x45F336f1b6384Cb1875bb6695DbD5Ac8Da3A1acf";
 export const TO_DO_LIST_ABI = [
   {
     inputs: [
